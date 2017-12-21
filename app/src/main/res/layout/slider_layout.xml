@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img_slider"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/txt_slider"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" متن تبلیغاتی متناسب با هر بنر اینجا قرار میگیرد"
+        android:textSize="16sp"
+        android:textColor="@color/main_page_text_view_sub_title_text_color"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/txt_slider"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
