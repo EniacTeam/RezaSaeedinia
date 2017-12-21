@@ -17,57 +17,67 @@
         android:textColor="#fff"
         android:background="@color/colorPrimary"
         android:gravity="center_horizontal|center_vertical"/>
-
     <me.relex.circleindicator.CircleIndicator
         android:id="@+id/Sliderindicator"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:layout_below="@+id/view_pager1"
-        android:layout_marginTop="10dp"/>
-
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_alignParentBottom="true"
-       android:layout_marginBottom="20dp">
-
-       <LinearLayout
-           android:id="@+id/linear1"
-           android:layout_width="match_parent"
-           android:layout_height="120dp"
-           android:orientation="horizontal"
-           android:weightSum="3"
-           android:gravity="center">
-
-           <include layout="@layout/news_item_layout"/>
-           <include layout="@layout/advices_item_layout"/>
-           <include layout="@layout/downloads_item_layout"/>
-
-
-       </LinearLayout>
-       <LinearLayout
-           android:id="@+id/linear2"
-           android:layout_width="match_parent"
-           android:layout_height="120dp"
-           android:orientation="horizontal"
-           android:weightSum="3"
-           android:gravity="center"
-           android:layout_below="@+id/linear1">
-
-           <include layout="@layout/reminder_item_layout"/>
-           <include layout="@layout/last_activations_item_layout"/>
-           <include layout="@layout/personal_profile_item_layout"/>
-
-
-       </LinearLayout>
-
-   </RelativeLayout>
-
+        android:layout_below="@+id/txt_toolbar" />
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager1"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="230dp"
         android:layout_below="@+id/txt_toolbar"
         android:layout_alignParentStart="true" />
+
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/view_pager1"
+       android:layout_marginTop="5dp">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="20dp">
+
+           <LinearLayout
+               android:id="@+id/linear1"
+               android:layout_width="match_parent"
+               android:layout_height="120dp"
+               android:orientation="horizontal"
+               android:weightSum="3"
+               android:gravity="center">
+
+               <include layout="@layout/news_item_layout"/>
+               <include layout="@layout/advices_item_layout"/>
+               <include layout="@layout/downloads_item_layout"/>
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/linear2"
+               android:layout_width="match_parent"
+               android:layout_height="120dp"
+               android:orientation="horizontal"
+               android:weightSum="3"
+               android:gravity="center"
+               android:layout_below="@+id/linear1">
+
+               <include layout="@layout/reminder_item_layout"/>
+               <include layout="@layout/last_activations_item_layout"/>
+               <include layout="@layout/personal_profile_item_layout"/>
+
+
+           </LinearLayout>
+
+       </RelativeLayout>
+
+   </ScrollView>
+
+
+
 
 </RelativeLayout>

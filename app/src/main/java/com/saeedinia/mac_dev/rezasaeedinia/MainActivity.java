@@ -1,5 +1,6 @@
 package com.saeedinia.mac_dev.rezasaeedinia;
 
+import android.content.Context;
 import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import me.relex.circleindicator.CircleIndicator;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity {
     private static int currentPage = 0;
@@ -63,5 +65,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 5000,5000);
 
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 }

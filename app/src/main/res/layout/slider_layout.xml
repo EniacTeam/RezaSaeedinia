@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:text=" متن تبلیغاتی متناسب با هر بنر اینجا قرار میگیرد"
         android:textSize="16sp"
-        android:textColor="@color/main_page_text_view_sub_title_text_color"
+        android:textColor="#03A9F4"
         android:gravity="center_horizontal|center_vertical"
         android:layout_alignParentBottom="true"
         android:id="@+id/txt_slider"
