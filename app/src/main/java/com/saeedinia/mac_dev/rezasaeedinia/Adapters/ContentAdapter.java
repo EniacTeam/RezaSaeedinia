@@ -7,12 +7,12 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-public class ContentAdapter<T> extends RecyclerView.Adapter<ContentAdapter.ContentViewHolder>
+public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentViewHolder>
 {
     private Context ContentContext = null;
-    private ArrayList<T> ContentDataList = null;
+    private ArrayList<String> ContentDataList = null;
 
-    public ContentAdapter(Context ContentContext, ArrayList<T> ContentDataList)
+    public ContentAdapter(Context ContentContext, ArrayList<String> ContentDataList)
     {
         this.ContentDataList = new ArrayList<>();
         this.ContentDataList = ContentDataList;
